@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="front-information">
+          <div class="info current-temp"></div>
+          <div class="info location">
+            <div class="city"></div>
+            <div class="time"></div>
+          </div>
+          <div class="info icon-description">
+            <img class="icon" src="" />
+            <div class="weather-description"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="side-information">
+          <div class="search-city">
+            <label for="city"></label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Another Location"
+            />
+            <button class="button">
+              <object
+                data="../backgrounds/magnify.svg"
+                type="image/svg+xml"
+                class="mylogo"
+                height="45"
+                width="45"
+              ></object>
+            </button>
+          </div>
+
+          <div class="weather-details">
+            <h3 class="headers">Weather Details</h3>
+            <div class="details">
+              <p>Cloudy</p>
+              <p class="cloudy"></p>
+            </div>
+            <div class="details">
+              <p>Humidity</p>
+              <p class="humidity"></p>
+            </div>
+            <div class="details">
+              <p>Wind</p>
+              <p class="wind"></p>
+            </div>
+          </div>
+        </div>
+        <div class="weather-details"></div>
+      </div>
+    </main>
+    <script src="main.js" defer></script>
+  </body>
+</html>
